@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cambio{
+    width: 600px;
+    background-color: #000;
+}
+
+.cambio td:first-of-type{
+    text-align: left;
+}
+.cambio td, .cambio th{
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 4px;
+    text-align: center;
+}
+
+.cambio th{
+    background-color: #ccc;
+}
+
+.cambio tr:nth-child(odd) td{
+    background-color: #6ee978e8;
+}
