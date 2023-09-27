@@ -98,3 +98,29 @@ footer{
     height: 200px;
     background-color: #ccc;
 }
+footer .esquerda,
+footer .centro,
+footer .direita{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+footer .esquerda h4,
+footer .centro h4,
+footer .direita h4{
+    font-size: 18px;
+}
+footer .direita{
+    padding-top: 40px;
+}
+footer .direita ul li{
+    list-style: none;
+}
+footer .assinatura{
+    padding: 25px 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
