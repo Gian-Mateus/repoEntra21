@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navegacao{
+    background-color: #FFCDD2;
+    display: grid;
+    grid-template-areas: 'logo link';
+    padding: 0 5em;
+    text-align: center;
+}
+nav a img{
+    grid-area: logo;
+    min-width: 200px;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+}
+
+nav li a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 10px;
+    text-transform: uppercase;
+}
+
+/* Parte de nbtícias */
+
