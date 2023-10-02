@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+/* Parte da Navegação (navbar) */
 #navegacao{
     background-color: #FFCDD2;
     display: grid;
@@ -32,7 +32,54 @@ nav li a{
     text-decoration: none;
     padding: 30px 10px;
     text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
 }
 
-/* Parte de nbtícias */
+/* Parte do conteúdo principal */
 
+#conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+#conteudo-principal a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.numero {
+    font-size: 3.56rem;
+    margin: 1.78rem 0 1.424rem 0;
+}
+
+.vagas,
+.curriculo,
+.classificados {
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+}
+
+
+.vagas a {
+    background-color: #01579b;
+    padding: 10px;
+    margin: 2px;
+}
+
+.curriculo a {
+    background-color: #ff9800;
+    padding: 10px;
+    margin: 2px;
+}
+
+.classificados a {
+    background-color: #004d40;
+    padding: 10px;
+    margin: 2px;
+}
