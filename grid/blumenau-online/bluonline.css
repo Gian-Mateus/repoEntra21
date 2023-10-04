@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+main {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
 /* Parte da Navegação (navbar) */
 #navegacao{
     background-color: #FFCDD2;
@@ -42,7 +48,6 @@ nav li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6px;
-    margin-top: 20px;
 }
 
 #conteudo-principal a {
@@ -60,9 +65,8 @@ nav li a{
 .curriculo,
 .classificados {
     display: grid;
-    border: 2px solid red;
     grid-template-columns: 1fr;
-    background-color: transparent;
+    text-align: center;
 }
 
 
