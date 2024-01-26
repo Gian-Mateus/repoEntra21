@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Parte da Navegação (navbar) */
+#navegacao{
+    background-color: #FFCDD2;
+    display: grid;
+    grid-template-areas: 'logo link';
+    padding: 0 5em;
+    text-align: center;
+}
+nav a img{
+    grid-area: logo;
+    min-width: 200px;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+}
+
+nav li a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Parte do conteúdo principal */
+
+#conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+}
+
+#conteudo-principal a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.numero {
+    font-size: 3.56rem;
+    margin: 1.78rem 0 1.424rem 0;
+}
+
+.vagas,
+.curriculo,
+.classificados {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+
+.vagas a {
+    background-color: #01579b;
+    padding: 10px;
+    margin: 2px;
+}
+
+.curriculo a {
+    background-color: #ff9800;
+    padding: 10px;
+    margin: 2px;
+}
+
+.classificados a {
+    background-color: #004d40;
+    padding: 10px;
+    margin: 2px;
+}

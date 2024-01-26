@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!-- Início componente -->
+                <div class="accordion" id="Meuaccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="true" aria-controls="collapse1">Abrir meu accordion</button>
+                        </h2>
+    
+                        <div class="accordion-collapse collapse show" id="item1" data-bs-parent="#Meuaccordion">
+                            <div class="accordion-body">
+                                <h2>Gian Mateus da Silveira</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus iure maiores earum, reiciendis ab nam? Porro blanditiis, explicabo est repellat quae itaque cupiditate cum eveniet a laborum harum fugit error.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item2" aria-expanded="true" aria-controls="collapse1">Abrir meu accordion</button>
+                        </h2>
+    
+                        <div class="accordion-collapse collapse show" id="item2" data-bs-parent="#Meuaccordion">
+                            <div class="accordion-body">
+                                <h2>Gian Mateus da Silveira</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus iure maiores earum, reiciendis ab nam? Porro blanditiis, explicabo est repellat quae itaque cupiditate cum eveniet a laborum harum fugit error.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert">Você errou algo</div>
+
+                    <h1>Gian Mateus <span class="badge bg-danger">Aluno</span></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="#">Blumenau</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="#">Notícias</a></li>
+                        </ol>
+                    </nav>
+
+                    <a href="#" class="btn btn-danger">"botão" com link</a>
+                    <button class="btn btn-warning">Botão</button>
+
+                    <div class="btn-group">
+                        <button class="btn btn-danger">Botão 1</button>
+                        <button class="btn btn-success">Botão 2</button>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.awsli.com.br/299/299243/arquivos/capa%20goku.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- Fim componente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

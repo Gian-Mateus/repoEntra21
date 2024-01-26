@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- 
+        CRUD
+        Create -> criar
+        Ready -> leitura
+        Update -> atualização
+        Delete -> deletar
+     -->
+
+     <!-- 
+        atributo action -> caminho para onde vai a requisição e envio dos dados preenchidos.
+
+        method diz o modo de envio das informações pelo navegador
+        GET -> solicita dados. quando envio, os dados sao exibidos na URL do navegador
+        POST -> envia dados e não exibe na URL
+      -->
+     <form action="contato.php" method="post" autocomplete="off">
+        <!-- 
+            para o click no label selecionar o campo
+            o valor de for e id tem que ser iguais
+         -->
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nome" required>
+
+        <!-- input para email -->
+        <input type="email" name="email" placeholder="E-mail">
+
+        <!-- campo numerico -->
+        <input type="number" name="numero" placeholder="Número">
+
+        <!-- campo de senha -->
+        <input type="password" name="senha" placeholder="senha">
+
+        <br>
+        <!-- input file para enviar 1 arquivo -->
+        <input type="file" name="arquivo">
+        <br>
+
+        <!-- input file para enviar varios arquivos -->
+        <input type="file" name="arquivos"  multiple>
+
+        <!-- select, lista de dados agrupados -->
+        <select name="estados" required multiple>
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+        </select>
+
+        <!-- campo oculto -->
+        <input type="hidden" name="id" value="1234">
+
+        <!-- input para mostrar de imagens -->
+        <input type="image" src="./img/ovelha.png" alt="">
+        <br>
+
+        <!-- input para selecionar cor -->
+        <input type="color" name="cor">
+
+        <!-- TEXTAREA, CAMPO PARA TEXTO LONGO, ELE PERMITE QUEBRA DE LINHA -->
+        <textarea name="texto" cols="50" rows="11" placeholder="Digite um texto"></textarea>
+
+        <!-- data list - lista de dados -->
+        <input type="text" name="listaDados" list="lista">
+        <datalist id="lista">
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 3</option>
+            <option value="item3">Item 3</option>
+        </datalist>
+
+        <!-- checkbox lista de dados onde posso marcar vários itens -->
+        <input type="checkbox" name="cores" id="vermelho" value="Vermelho" checked> <label for="vermelho">Vermelho</label>
+        <input type="checkbox" name="cores" id="amarelo" value="Amarelo"> <label for="amarelo">Amarelo</label>
+        <input type="checkbox" name="cores" id="verde" value="Verde"> <label for="verde">Verde</label>
+
+        <!-- radio permite a marcação de apenas um item da lista, desde que o name deles sejam iguais -->
+        <br>
+        <!-- name = parametro | value = valor  // liquido=agua  -->
+        <input type="radio" name="liquido" value="agua"> <label for="agua">Água</label>
+        <input type="radio" name="liquido" value="cerveja"> <label for="cerveja">Cerveja</label>
+        <input type="radio" name="liquido" value="cafe"> <label for="cafe">Café</label>
+
+        <br>
+        <label for="">Campo com valor fixo</label>
+        <!-- 
+            value="valor" -> preenche um valor padrão
+            required -> marca o campo como obritório
+            readonly -> apenas leitura (o campo é enviado)
+            disabled -> desabilita o campo (o campo não é enviado no formulário)
+         -->
+        <input type="text" name="teste1" value="Valor fixo" required disabled>
+        <br>
+
+        <label for="">Valor minimo e máximo</label>
+        <input type="number" min="10" max="25">
+
+        <br>
+        <label for="">Tamanho máximo de caracteres</label>
+        <input type="text" name="maximo" maxlength="8">
+
+        <!-- campo submit -->
+        <input type="submit" value="ENVIAR">
+
+        <button type="submit">ENVIO COM BUTTON</button>
+     </form>
+</body>
+</html>

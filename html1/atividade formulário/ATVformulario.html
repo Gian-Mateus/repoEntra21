@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <form action="#" method="post">
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="dataNasc">Data de nascimento:</label>
+    <input type="date" id="dataNasc" name="dataNasc" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+    <option value="N">Neutro</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+    </select>
+
+    <label for="estadoCivil">Estado civil:</label>
+    <select id="estadoCivil" name="estadoCivil" required>
+    <option value="S">Solteiro(a)</option>
+    <option value="C">Casado(a)</option>
+    <option value="D">Divorciado(a)</option>
+    <option value="V">Viúvo(a)</option>
+    </select>
+
+    <label for="nacionalidade">Nacionalidade:</label>
+    <input type="text" id="nacionalidade" name="nacionalidade" required>
+    
+    <br><br>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" required>
+
+    <label for="rg">RG:</label>
+    <input type="text" id="rg" name="rg" required>
+
+    <label for="orgaoExpedidor">Orgão expedidor:</label>
+    <input type="text" id="orgaoExpedidor" name="orgaoExpedidor" required>
+
+    <label for="dataExpedicao">Data de expedição:</label>
+    <input type="date" id="dataExpedicao" name="dataExpedicao" required>
+    
+    <br><br>
+    
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@mail.com">
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(00)0000-0000">
+    </fieldset>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Endereço</legend>
+
+<label for="cep">CEP:</label>
+<input type="text" id="cep" name="cep" required>
+
+<label for="logradouro">Logradouro:</label>
+<input type="text" id="logradouro" name="logradouro" required>
+
+<label for="numero">Número:</label>
+<input type="number" id="numero" name="numero" required>
+
+<label for="complemento">Complemento:</label>
+<input type="text" id="complemento" name="complemento">
+
+<label for="bairro">Bairro:</label>
+<input type="text" id="bairro" name="bairro" required>
+
+<br><br>
+
+<label for="cidade">Cidade:</label>
+<input type="text" id="cidade" name="cidade" required>
+
+<label for="estado">Estado:</label>
+<input type="text" id="estado" name="estado" required>
+
+<label for="pais">País:</label>
+<input type="text" id="pais" name="pais" required>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Objetivo</legend>
+    <textarea name="objetivos" cols="70" rows="10" placeholder="Digite aqui seus objetivos profissionais..."></textarea>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Formação Acadêmica</legend>
+    <label for="nivel">Nível:</label>
+    <select id="nivel" name="nivel" required>
+        <option value="S">Sem formação</option>
+        <option value="EFi">Ensino Fundamental Incompleto</option>
+        <option value="EFc">Ensino Fundamental Completo</option>
+        <option value="EMi">Ensino Médio Incompleto</option>
+        <option value="EMc">Ensino Médio Completo</option>
+        <option value="ESI">Ensino Superior Incompleto</option>
+        <option value="ESC">Ensino Superior Completo</option>
+    </select>
+    <br>
+    <label for="instituicao">Instituição:</label>
+    <input type="text" id="instituicao" name="instituicao" maxlength=100>
+    <legend>Período:</legend>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datater">Data de término</label>
+    <input type="date" name="datater" id="datater">
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Experiência Profissional</legend>
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" name="empresa" maxlength=300>
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" name="cargo"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+    <br>
+    <br>
+    <textarea name="descAtv" id="" cols="60" rows="5" placeholder="Descrição das atividades..." maxlength="100"></textarea>
+    <br>
+    <br>
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" name="empresa" maxlength=300>
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" name="cargo"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+    <br>
+    <br>
+    <textarea name="descAtv" id="" cols="60" rows="5" placeholder="Descrição das atividades..." maxlength="100"></textarea>
+    <br>
+    <br>
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" name="empresa" maxlength=300>
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" name="cargo"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+    <br>
+    <br>
+    <textarea name="descAtv" id="" cols="60" rows="5" placeholder="Descrição das atividades..." maxlength="100"></textarea>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Habilidades e Competências</legend>
+    <textarea name="habilidades" cols="100" rows="10" placeholder="Digite aqui suas habilidades e competências relevantes"></textarea>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Cursos</legend>
+
+    <label for="curso1">Curso:</label>
+    <input type="text" id="curso1" name="curso1" maxlength=100>
+    <label for="local">Instituição:</label>
+    <input type="text" id="local" name="local"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+    <br>
+    <br>
+    <label for="curso2">Curso:</label>
+    <input type="text" id="curso2" name="curso2" maxlength=100>
+    <label for="local">Instituição:</label>
+    <input type="text" id="local" name="local"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+    <br>
+    <br>
+    <label for="curso3">Curso:</label>
+    <input type="text" id="curso3" name="curso3" maxlength=100>
+    <label for="local">Instituição:</label>
+    <input type="text" id="local" name="local"maxlength=100>
+    <label for="dataini">Data de início:</label>
+    <input type="date" name="dataini" id="dataini">
+    <label for="datafim">Data de término:</label>
+    <input type="date" name="datafim" id="datafim">
+
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Informações Complementares</legend>
+    <textarea name="info" cols="100" rows="10" maxlength="400" placeholder="Sinta-se livre para inserir qualquer informação que achar necessária..."></textarea>
+</fieldset>
+    </form>
+</body>
+</html>

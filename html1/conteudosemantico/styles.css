@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap');
+
+#navegacao{
+    width: 100%;
+    height: 80px;
+    background-color: #c1c1c1;
+}
+
+#navegacao .nav-brand{
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+#navegacao ul{
+    float: left;
+}
+#navegacao ul li{
+    display: inline-block;
+}
+#navegacao ul li a{
+    display: block;
+    padding: 31px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+#navegacao ul li a:hover{
+    background-color: #ccc;
+    transition: 0.3s ease-in;
+}
+
+main{
+    max-width: 1280px;
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#destaques article{
+    width: 22%;
+    display: inline-block;
+    margin: 0 1%;
+    vertical-align: top;
+}
+
+#destaques article header h3{
+    display: inline-block;
+    background-color: red;
+    padding: 4px 8px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+
+#destaques article div.content{
+    min-height: 300px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px 1px rgba(0,0,0,0.4);
+    text-align: center;
+}
+#destaques article div.title{
+    min-height: 100px;
+}
+#destaques article div.action{
+    padding: 10px 0;
+}
+#destaques article img{
+    width: 100%;
+}
+#destaques article h4{
+    padding: 4px 8px;
+    text-align: left;
+}
+
+/* COMPONENTES PADRÕES */
+.btn{
+    display: inline-block;
+    background-color: rgb(223, 131, 94);
+    padding: 8px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+}
+footer .esquerda,
+footer .centro,
+footer .direita{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+footer .esquerda h4,
+footer .centro h4,
+footer .direita h4{
+    font-size: 18px;
+}
+footer .direita{
+    padding-top: 40px;
+}
+footer .direita ul li{
+    list-style: none;
+}
+footer .assinatura{
+    padding: 25px 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
